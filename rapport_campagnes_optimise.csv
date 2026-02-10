@@ -1,0 +1,6 @@
+persona,envoyes,ouvertures,clics,taux_ouverture,ctr,reactivite
+ETI,500,250,120,50.0,24.0,48.0
+Startup,400,150,50,37.5,12.5,33.33
+Dirigeant,1000,300,90,30.0,9.0,30.0
+Acheteur,800,200,40,25.0,5.0,20.0
+PME,600,180,30,30.0,5.0,16.67

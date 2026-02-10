@@ -1,0 +1,43 @@
+[
+    {
+        "nom": "Alice",
+        "email": "alice@email.com",
+        "score": 70,
+        "actions": [
+            {
+                "type": "clic",
+                "date": "2026-01-15"
+            },
+            {
+                "type": "telechargement",
+                "date": "2026-01-16"
+            }
+        ]
+    },
+    {
+        "nom": "Charlie",
+        "email": "charlie@email.com",
+        "score": 10,
+        "actions": [
+            {
+                "type": "clic",
+                "date": "2026-02-01"
+            },
+            {
+                "type": "non_ouvert",
+                "date": "2025-12-01"
+            }
+        ]
+    },
+    {
+        "nom": "Bob",
+        "email": "bob@email.com",
+        "score": -10,
+        "actions": [
+            {
+                "type": "non_ouvert",
+                "date": "2025-12-01"
+            }
+        ]
+    }
+]
