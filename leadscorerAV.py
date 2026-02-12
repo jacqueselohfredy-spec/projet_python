@@ -3,7 +3,7 @@ from tkinter import ttk, messagebox
 import json
 from datetime import datetime
 
-# ===== Classe Lead =====
+
 class Lead:
     def __init__(self, nom, email, actions):
         self.nom = nom
@@ -41,11 +41,11 @@ class Lead:
             "actions": self.actions
         }
 
-# ===== Variables =====
+
 leads = []
 actions_temp = []
 
-# ===== Fonctions =====
+
 
 def ajouter_action():
     type_action = combo_action.get()
@@ -103,13 +103,12 @@ def exporter_json():
 
     messagebox.showinfo("Succès", "Export JSON réussi !")
 
-# ===== Interface =====
+
 
 root = tk.Tk()
 root.title("Lead Scorer Automatisé")
 root.geometry("750x600")
 
-# --- Infos Lead ---
 tk.Label(root, text="Nom").pack()
 entry_nom = tk.Entry(root)
 entry_nom.pack()
@@ -118,7 +117,7 @@ tk.Label(root, text="Email").pack()
 entry_email = tk.Entry(root)
 entry_email.pack()
 
-# --- Actions ---
+
 tk.Label(root, text="Type d'action").pack()
 
 combo_action = ttk.Combobox(root, values=[
@@ -137,11 +136,10 @@ tk.Button(root, text="Ajouter action", command=ajouter_action).pack()
 list_actions = tk.Listbox(root, height=5)
 list_actions.pack(fill="x")
 
-# --- Bouton Lead ---
+
 tk.Button(root, text="Ajouter Prospect", command=ajouter_lead,
           bg="green", fg="white").pack(pady=10)
 
-# --- Tableau ---
 tree = ttk.Treeview(root, columns=("Nom", "Email", "Score"),
                     show="headings")
 
@@ -151,7 +149,7 @@ tree.heading("Score", text="Score")
 
 tree.pack(fill="both", expand=True)
 
-# --- Export ---
+
 tk.Button(root, text="Exporter JSON", command=exporter_json,
           bg="blue", fg="white").pack(pady=10)
 
